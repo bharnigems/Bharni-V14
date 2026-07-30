@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&family=Cinzel:wght@400;500&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&display=swap">
+
+  <title>Our Values — Bharni | Vision, Mission & Core Values</title>
+  <meta name="description" content="Bharni' values: our vision, mission and core values that have guided us for eighteen years.">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <style>
+    html, body { overflow-x: hidden; max-width: 100%; }
+
+    /* ── Scroll video (same as before) ── */
+    .scroll-video-wrap { position: relative; height: 100vh; }
+    .scroll-video-sticky { position: relative; height: 100vh; overflow: hidden; }
+    .scroll-video-sticky video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .scroll-video-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,9,6,0.85) 0%, rgba(10,9,6,0.55) 40%, rgba(10,9,6,0.65) 100%); z-index: 1; }
+    .scroll-video-text { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 40px; }
+    .scroll-video-text .hero-line-1 { display: block; font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300; font-style: normal; color: #ffffff; line-height: 1.1; margin-bottom: 8px; opacity: 0; transform: translateY(20px); transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out); text-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+    .scroll-video-text .hero-line-1.visible { opacity: 1; transform: none; }
+    .scroll-video-text .hero-line-2 { display: block; font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300; font-style: normal; color: #c9a84c; opacity: 0; transform: translateY(16px); transition: opacity 0.9s var(--ease-out) 0.2s, transform 0.9s var(--ease-out) 0.2s; text-shadow: 0 2px 24px rgba(0,0,0,0.3); }
+    .scroll-video-text .hero-line-2.visible { opacity: 1; transform: none; }
+
+    /* ── Page tabs ── */
+    .values-tabs {
+      position: sticky; top: 60px; z-index: 10;
+      background: #f4f0e8;
+      border-bottom: 1px solid rgba(138,111,46,0.15);
+      display: flex; justify-content: center; gap: 0;
+      padding: 0;
+    }
+    .values-tab {
+      font-size: 0.78rem; letter-spacing: 0.32em; text-transform: uppercase;
+      color: rgba(28,23,18,0.45); padding: 18px 40px; cursor: pointer;
+      border-bottom: 2px solid transparent; transition: all 0.3s; background: none; border-top: none; border-left: none; border-right: none; font-family: var(--font-body);
+    }
+    .values-tab:hover { color: #8a6f2e; }
+    .values-tab.active { color: #8a6f2e; border-bottom-color: #8a6f2e; }
+
+    /* ── Section anchors ── */
+    .values-anchor { scroll-margin-top: 100px; }
+
+    /* ── Part intro ── */
+    .part-intro {
+      padding: 80px clamp(24px,6vw,80px) 28px;
+      border-bottom: 1px solid rgba(138,111,46,0.12);
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column; text-align: center; gap: 20px;
+    }
+    .part-intro__num { font-family: var(--font-display); font-size: clamp(2.3rem, 4.025vw, 3.68rem); font-weight: 300; color: rgba(138,111,46,0.12); line-height: 1; letter-spacing: 0.05em; }
+    .part-intro__text { flex: 1; }
+    .part-intro__label { font-size: 0.78rem; letter-spacing: 0.35em; text-transform: uppercase; color: #8a6f2e; margin-bottom: 16px; display: block; }
+    .part-intro__title { font-family: var(--font-display); font-size: clamp(2.3rem, 4.025vw, 3.68rem); font-weight: 400; color: #8a6f2e; line-height: 1; }
+    .part-intro__rule { width: 54px; height: 2px; margin: 20px auto 0; background: linear-gradient(to right, transparent, #c9a84c, transparent); }
+    .part-intro__title em { color: #8a6f2e; font-style: normal; }
+    .part-intro__sub { font-size: 1.38rem; line-height: 1.8; color: rgba(28,23,18,0.55); margin-top: 14px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    /* ── Vision statement ── */
+    .vision-statement { min-height: auto; padding: 40px clamp(24px,6vw,80px); border-bottom: 1px solid rgba(138,111,46,0.12); text-align: center; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .vision-statement::before { content: "V"; position: absolute; right: -20px; top: 20px; font-family: var(--font-display); font-size: 30rem; font-weight: 300; color: rgba(138,111,46,0.04); line-height: 1; pointer-events: none; user-select: none; }
+    .vision-statement__inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
+    .vision-statement__display { margin-bottom: 52px; }
+    .vision-statement__line { display: inline; font-family: var(--font-display); font-size: clamp(1.495rem, 2.3vw, 1.84rem); font-weight: 400; letter-spacing: 0.05em; color: #1c1712; line-height: 2.2; text-align: center; }
+    .vision-statement__line.ml-start::before { content: '\A'; white-space: pre; }
+    .vision-statement__line--gold { display: block; margin-top: 0.5em; color: #1c1712; font-style: normal; }
+    .vision-statement__context { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 48px; }
+    .vision-statement__rule { flex: 1; max-width: 80px; height: 1px; background: rgba(138,111,46,0.35); }
+    .vision-statement__context-text { font-family: var(--font-display); font-size: clamp(1.495rem, 2.3vw, 1.84rem); font-style: normal; color: #1c1712; letter-spacing: 0.02em; }
+    /* Desktop: let the phrases flow into fewer lines (the compact V04 look)
+       instead of one stacked line each. Mobile is untouched. */
+    @media (min-width: 769px) {
+      .vision-statement__card { width: max-content; max-width: 100%; }
+      .vision-statement__display { white-space: nowrap; margin-bottom: 40px; }
+      .vision-statement__line { display: inline; line-height: 2.0; }
+      .vision-statement__line.ml-start::before { content: none; }
+      .vision-statement__line.dl-start::before { content: '\A'; white-space: pre; }
+      .vision-statement__line--gold { display: block; margin-top: 0.5em; }
+    }
+
+    /* ── Pillars reveal ── */
+    .pillars-section { padding: 0 clamp(24px,6vw,80px); border-bottom: 1px solid rgba(138,111,46,0.12); }
+    .pillars-trigger {
+      display: flex; align-items: center; justify-content: center; gap: 16px; cursor: pointer;
+      padding: 36px 0; border-bottom: 1px solid rgba(138,111,46,0.15);
+      user-select: none; transition: opacity 0.3s; width: 100%;
+    }
+    .pillars-trigger:hover { opacity: 0.75; }
+    .trigger-icon { width: 22px; height: 22px; position: relative; flex-shrink: 0; }
+    .trigger-icon::before, .trigger-icon::after { content: ""; position: absolute; background: #8a6f2e; transition: transform 0.4s ease, opacity 0.3s; }
+    .trigger-icon::before { width: 1px; height: 14px; top: 4px; left: 10px; }
+    .trigger-icon::after { width: 14px; height: 1px; top: 10px; left: 3px; }
+    .pillars-trigger.open .trigger-icon::before { transform: rotate(90deg); opacity: 0; }
+    .trigger-text { font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; color: #8a6f2e; }
+    .trigger-count { font-family: var(--font-display); font-size: 1.38rem; color: rgba(138,111,46,0.45); }
+
+    .pillars-wrap { max-height: 0; overflow: hidden; transition: max-height 1s cubic-bezier(0.4,0,0.2,1); }
+    .pillars-wrap.open { max-height: 3000px; }
+
+    /* single pillar row */
+    .pillar-row {
+      display: grid; grid-template-columns: 80px 1fr; gap: 0;
+      border-bottom: 1px solid rgba(138,111,46,0.08);
+      opacity: 0; transform: translateY(14px);
+      transition: opacity 0.5s ease, transform 0.5s ease, background 0.3s;
+    }
+    .pillars-wrap.open .pillar-row { opacity: 1; transform: translateY(0); }
+    .pillars-wrap.open .pillar-row:nth-child(1){ transition-delay: 0.1s; }
+    .pillars-wrap.open .pillar-row:nth-child(2){ transition-delay: 0.18s; }
+    .pillars-wrap.open .pillar-row:nth-child(3){ transition-delay: 0.26s; }
+    .pillars-wrap.open .pillar-row:nth-child(4){ transition-delay: 0.34s; }
+    .pillars-wrap.open .pillar-row:nth-child(5){ transition-delay: 0.42s; }
+    .pillars-wrap.open .pillar-row:nth-child(6){ transition-delay: 0.50s; }
+    .pillar-row:hover { background: rgba(138,111,46,0.025); }
+    .pillar-row:last-child { border-bottom: none; }
+
+    .pillar__motif { display: flex; align-items: center; justify-content: center; padding: 36px 0; }
+    .pillar__motif svg { width: 36px; height: 36px; overflow: visible; display: block; flex-shrink: 0; }
+    .pillar__body { padding: 32px 0 32px 24px; border-left: 1px solid rgba(138,111,46,0.1); }
+    .pillar__title { font-family: var(--font-display); font-size: clamp(1.84rem, 2.875vw, 2.53rem); font-weight: 400; color: #1c1712; margin-bottom: 12px; line-height: 1.2; }
+    .pillar__text { font-size: 1.45rem; line-height: 1.9; color: rgba(28,23,18,0.7); }
+    .pillar__text .hl-gold { color: #8a6f2e; font-style: normal; }
+    .pillar__text .hl { color: #1c1712; font-style: normal; border-bottom: 1px solid rgba(138,111,46,0.3); padding-bottom: 1px; }
+
+    /* SVG animations */
+    .svg-eye .iris { animation: irisOpen 4s ease-in-out infinite; transform-origin: 11px 11px; }
+    @keyframes irisOpen { 0%,100%{ transform:scaleY(0.6); } 50%{ transform:scaleY(1); } }
+    .svg-eye .glint { opacity:0; animation: glintFire 4s ease-in-out infinite; }
+    @keyframes glintFire { 0%,60%,80%,100%{opacity:0;} 70%{opacity:1;} }
+    .svg-heart .heart { animation: heartbeat 3.5s ease-in-out infinite; transform-origin: 11px 12px; }
+    @keyframes heartbeat { 0%,100%{transform:scale(1);} 30%{transform:scale(1.12);} 60%{transform:scale(0.97);} }
+    .svg-crown .crown { animation: crownGlow 4s ease-in-out infinite; }
+    @keyframes crownGlow { 0%,100%{opacity:0.45;} 50%{opacity:0.85;} }
+    .svg-line .line { stroke-dasharray:60; stroke-dashoffset:60; animation: drawLine 2.5s ease-in-out infinite; }
+    @keyframes drawLine { 0%{stroke-dashoffset:60;} 55%,100%{stroke-dashoffset:0;} }
+    .svg-bangle .bangle { stroke-dasharray:100; stroke-dashoffset:100; animation: bangleAppear 3s ease-in-out infinite; }
+    @keyframes bangleAppear { 0%,20%{stroke-dashoffset:100;} 60%,80%{stroke-dashoffset:0;} 100%{stroke-dashoffset:100;} }
+    .svg-clasp .h1 { animation: clasp1 4s ease-in-out infinite; }
+    .svg-clasp .h2 { animation: clasp2 4s ease-in-out infinite; }
+    @keyframes clasp1 { 0%,20%,100%{transform:translateX(-3px);} 50%,80%{transform:translateX(0);} }
+    @keyframes clasp2 { 0%,20%,100%{transform:translateX(3px);} 50%,80%{transform:translateX(0);} }
+
+    /* ── Mission ── */
+    .mission-section { padding: 0 clamp(24px,6vw,80px) 60px; border-bottom: 1px solid rgba(138,111,46,0.12); }
+    .mission-item {
+      padding: 72px 0;
+      border-top: 1px solid rgba(138,111,46,0.1);
+      position: relative; overflow: hidden;
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .mission-item:last-child { border-bottom: 1px solid rgba(138,111,46,0.1); }
+    .mission-item.visible { opacity: 1; transform: translateY(0); }
+    .mission-item:nth-child(1){ transition-delay: 0s; }
+    .mission-item:nth-child(2){ transition-delay: 0.1s; }
+    .mission-item:nth-child(3){ transition-delay: 0.2s; }
+    .mission-item:nth-child(4){ transition-delay: 0.3s; }
+    .mission-item:nth-child(5){ transition-delay: 0.4s; }
+    .mission-ghost {
+      position: absolute; right: -2%; top: 50%; transform: translateY(-50%);
+      font-family: var(--font-display); font-weight: 300;
+      font-size: clamp(6rem,13vw,10rem);
+      color: rgba(138,111,46,0.055); line-height: 1;
+      user-select: none; pointer-events: none;
+      letter-spacing: -0.02em; white-space: nowrap;
+    }
+    .mission-num {
+      font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(138,111,46,0.5); display: block; margin-bottom: 24px;
+    }
+    .mission-rule { width: 40px; height: 1px; background: rgba(138,111,46,0.4); margin-bottom: 24px; }
+    .mission-text {
+      font-family: var(--font-display); font-size: clamp(1.84rem, 2.875vw, 2.53rem);
+      font-weight: 400; color: #1c1712; line-height: 1.6;
+      max-width: 680px; position: relative; z-index: 1;
+    }
+    .mission-text em { color: #8a6f2e; font-style: normal; }
+    
+
+    /* ── Highlights ── */
+    .hl { color: #1c1712; font-style: normal; border-bottom: 1px solid rgba(138,111,46,0.3); padding-bottom: 1px; }
+    .hl-gold { color: #8a6f2e; font-style: normal; }
+
+    /* ── Karma / close ── */
+    .vision-pullquote { padding: 80px clamp(24px,6vw,80px); text-align: center; border-bottom: 1px solid rgba(138,111,46,0.12); position: relative; overflow: hidden; }
+    .vision-pullquote::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(138,111,46,0.04) 0%, transparent 65%); pointer-events: none; }
+    .vision-pullquote__inner { position: relative; z-index: 1; max-width: 740px; margin: 0 auto; }
+    .vision-close { padding: 72px clamp(24px,6vw,80px); text-align: center; border-top: 1px solid rgba(138,111,46,0.12); position: relative; overflow: hidden; }
+    .vision-close__bg { position: absolute; inset: 0; background: radial-gradient(ellipse 50% 60% at 50% 50%, rgba(138,111,46,0.05) 0%, transparent 65%); }
+    .vision-close__content { position: relative; z-index: 1; max-width: 560px; margin: 0 auto; }
+
+    @media(max-width:900px) {
+      .part-intro { padding: 56px clamp(24px,4vw,48px) 40px; }
+      .part-intro__num { font-size: 2rem; }
+      .part-intro__title { font-size: clamp(2.3rem, 4.025vw, 3.68rem); }
+      .mission-item { padding: 52px 0; }
+      .mission-ghost { font-size: clamp(4rem,10vw,7rem); }
+    }
+
+    @media(max-width:640px) {
+      .mission-item { padding: 32px 0; }
+    }
+
+  
+
+    </style>
+  <style>
+/* ── LIGHT THEME — loaded last, overrides all ── */
+/* ═══════════════════════════════════════════════════════════════
+   BHARNI GEMS — LIGHT / CREAM THEME
+   Premium cream ground. Deep ink. Warm gold.
+   Same DNA, different mood. Every page, fully considered.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Token Overrides ────────────────────────────────────────── */
+:root {
+  --black:        #f4f0e8;
+  --obsidian:     #ede8de;
+  --obsidian-2:   #e5dfd3;
+  --obsidian-3:   #d9d1c4;
+  --gold:         #8a6f2e;
+  --gold-light:   #9a7f3a;
+  --gold-dim:     #b89840;
+  --champagne:    #1c1712;
+  --champagne-2:  #2e261c;
+  --white:        #1c1712;
+  --muted:        #4a4035;
+  --line:         rgba(138,111,46,0.18);
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+body           { background: #f4f0e8 !important; color: #1c1712 !important; }
+.reveal { opacity: 1 !important; transform: none !important; }
+.scroll-video-text .hero-line-1 { opacity: 1 !important; transform: none !important; }
+.scroll-video-text .hero-line-2 { opacity: 1 !important; transform: none !important; }
+
+body::before   { opacity: 0.18 !important; }
+
+::-webkit-scrollbar-track { background: #f4f0e8 !important; }
+::-webkit-scrollbar-thumb { background: #b89840 !important; }
+::selection    { background: rgba(138,111,46,0.2) !important; color: #1c1712 !important; }
+
+/* ── Nav ────────────────────────────────────────────────────── */
+.nav.scrolled  { background: rgba(244,240,232,1) !important; border-color: rgba(138,111,46,0.12) !important; }
+.nav[data-bg="light"] .nav__logo { color: #1c1712 !important; }
+.nav[data-bg="light"] .nav__logo:hover span { color: #8a6f2e !important; }
+.nav[data-bg="light"] .nav__links a { color: #4a4035 !important; }
+.nav[data-bg="light"] .nav__links a:hover, .nav[data-bg="light"] .nav__links a.active { color: #8a6f2e !important; }
+.nav[data-bg="dark"] .nav__logo { color: #ffffff !important; }
+.nav[data-bg="dark"] .nav__links a { color: #ffffff !important; }
+.nav[data-bg="dark"] .nav__links a:hover { color: var(--gold) !important; }
+.nav[data-bg="brown"] .nav__logo { color: #ffffff !important; }
+.nav[data-bg="brown"] .nav__links a { color: #ffffff !important; }
+.nav[data-bg="brown"] .nav__links a:hover { color: var(--gold) !important; }
+.nav[data-bg="dark"] .nav__hamburger span { background: #ffffff !important; }
+.nav[data-bg="light"] .nav__hamburger span { background: #1c1712 !important; }
+.nav[data-bg="brown"] .nav__hamburger span { background: #ffffff !important; }
+/* Mobile overlay — keep dark */
+@media(max-width:768px) {
+  .nav__links  { background: rgba(28,23,18,0.98) !important; }
+  .nav__links a { color: #f4f0e8 !important; }
+  .nav__links a.active { color: #c9a84c !important; }
+}
+
+
+/* ── Typography ─────────────────────────────────────────────── */
+em             { color: #8a6f2e !important; }
+.section-label { color: #1c1712 !important; }
+.display-1, .display-2, .display-3 { color: #1c1712 !important; }
+.body-text     { color: #2e261c !important; }
+.t-whisper     { color: #3a3028 !important; }
+.t-statement   { color: #1c1712 !important; }
+.t-statement em{ color: #8a6f2e !important; }
+.gold-rule     { background: #8a6f2e !important; }
+.divider::before, .divider::after { background: linear-gradient(90deg,transparent,rgba(138,111,46,0.25),transparent) !important; }
+.divider__diamond { background: #8a6f2e !important; }
+
+/* ── Buttons ────────────────────────────────────────────────── */
+.btn           { color: #1c1712 !important; border-color: #8a6f2e !important; background: transparent !important; }
+.btn:hover     { background: #8a6f2e !important; color: #f4f0e8 !important; }
+
+/* ── Page hero (inner pages) ────────────────────────────────── */
+.page-hero     { border-bottom-color: rgba(138,111,46,0.15) !important; }
+.page-hero__bg { background: linear-gradient(145deg, #e5dfd3 0%, #cec6b8 100%) !important; }
+.page-hero__bg::after { background: linear-gradient(to top, #f4f0e8, transparent) !important; }
+.page-hero__title { color: #1c1712 !important; }
+.page-hero__number { color: rgba(138,111,46,0.07) !important; }
+
+/* ── Trade CTA — dark block for contrast punch ──────────────── */
+.trade-cta              { background: #1c1712 !important; }
+.trade-cta .section-label { color: rgba(201,168,76,0.65) !important; }
+.trade-cta__title       { color: #f4f0e8 !important; }
+.trade-cta__title em    { color: #c9a84c !important; }
+.trade-cta__sub         { color: rgba(244,240,232,0.72) !important; }
+.trade-cta__corner      { border-color: rgba(201,168,76,0.25) !important; }
+.trade-cta .btn         { color: #f4f0e8 !important; border-color: rgba(201,168,76,0.4) !important; }
+.trade-cta .btn:hover   { background: #c9a84c !important; color: #1c1712 !important; border-color: #c9a84c !important; }
+
+/* ── Footer — keep dark ─────────────────────────────────────── */
+footer, footer .footer  { background: #1c1712 !important; }
+.footer__brand          { color: #c9a84c !important; }
+.footer__tagline        { color: rgba(244,240,232,0.5) !important; }
+.footer__links a, .footer__contact a { color: rgba(244,240,232,0.62) !important; }
+.footer__links a:hover, .footer__contact a:hover { color: #c9a84c !important; }
+.footer__bottom         { border-top-color: rgba(244,240,232,0.08) !important; }
+.footer__copy           { color: rgba(244,240,232,0.32) !important; }
+.footer__social-link    { color: rgba(201,168,76,0.4) !important; }
+.footer__social-link:hover { color: #c9a84c !important; }
+footer p[style]         { color: rgba(244,240,232,0.62) !important; }
+
+/* ════════════════════════════════════════
+   HOME PAGE (index.html / index_light.html)
+   ════════════════════════════════════════ */
+
+/* Hero video stays dark — it's a full-bleed video */
+/* Hero video — keep overlay exactly as dark, no change */
+/* .hero__overlay intentionally NOT overridden */
+.hero__tagline  { color: #8a6f2e !important; }
+.hero__scroll-label { color: #8a6f2e !important; }
+.hero__scroll-line  { background: #8a6f2e !important; }
+.hero__corner   { border-color: rgba(138,111,46,0.3) !important; }
+
+/* Philosophy */
+.philosophy     { background: #ede8de !important; }
+.philosophy__quote { color: #1c1712 !important; }
+.philosophy__quote em { color: #8a6f2e !important; }
+.philosophy .body-text { color: #3a3028 !important; }
+
+/* Collections section */
+.collections    { background: #f4f0e8 !important; }
+.coll-meta      { background: #f4f0e8 !important; }
+.coll-meta__name { color: #1c1712 !important; }
+.coll-corner    { border-color: rgba(138,111,46,0.25) !important; }
+
+/* 7P's */
+.values         { background: #f4f0e8 !important; }
+.values__intro .display-2 { color: #1c1712 !important; }
+.values__body-text { color: rgba(28,23,18,0.6) !important; }
+.p-scene        { border-top-color: rgba(138,111,46,0.12) !important; }
+.p-scene__title { color: #1c1712 !important; }
+.p-scene__rule  { background: #8a6f2e !important; }
+.p-scene__hook  { color: #8a6f2e !important; }
+.p-scene__text  { color: rgba(28,23,18,0.72) !important; }
+.p-motif-stroke      { stroke: rgba(138,111,46,0.5) !important; }
+.p-motif-stroke-soft { stroke: rgba(138,111,46,0.28) !important; }
+.p-motif-fill-soft   { fill:   rgba(138,111,46,0.06) !important; }
+
+/* ════════════════════════════════════════
+   COLLECTIONS PAGE
+   ════════════════════════════════════════ */
+.cat-tabs       { background: #ede8de !important; border-bottom-color: rgba(138,111,46,0.15) !important; }
+.cat-tab        { color: #4a4035 !important; }
+.cat-tab:hover  { color: #8a6f2e !important; }
+.cat-tab.active { color: #8a6f2e !important; border-bottom-color: #8a6f2e !important; }
+.cat-section    { border-top-color: rgba(138,111,46,0.12) !important; }
+.cat-header     { border-bottom-color: rgba(138,111,46,0.12) !important; }
+.cat-title      { color: #1c1712 !important; }
+.cat-desc       { color: #3a3028 !important; }
+.pcard          { background: #e5dfd3 !important; }
+.pcard::after   { border-color: rgba(138,111,46,0) !important; }
+.pcard:hover::after { border-color: rgba(138,111,46,0.4) !important; }
+.pcard__images  { background: #d9d1c4 !important; }
+/* Product images stay as-is on cream — natural light look */
+.trade-bar      { background: #ede8de !important; border-color: rgba(138,111,46,0.15) !important; }
+.trade-bar h3   { color: #1c1712 !important; }
+.trade-bar p    { color: #3a3028 !important; }
+.single-trade-bar { border-top-color: rgba(138,111,46,0.12) !important; }
+.single-trade-bar p { color: #3a3028 !important; }
+
+/* ════════════════════════════════════════
+   MANIFESTO PAGE
+   ════════════════════════════════════════ */
+
+/* Video hero — stays dark naturally (video bg) */
+/* Content below the video */
+.manifesto-body { background: #f4f0e8 !important; }
+.manifesto-body p { color: rgba(28,23,18,0.85) !important; }
+.manifesto-body h2 { color: rgba(138,111,46,0.8) !important; }
+.manifesto-body h2::before { background: rgba(138,111,46,0.35) !important; }
+.manifesto-intro { color: #1c1712 !important; border-bottom-color: rgba(138,111,46,0.15) !important; }
+.manifesto-intro .intro-quiet { color: rgba(28,23,18,0.82) !important; }
+.manifesto-section { border-bottom-color: rgba(138,111,46,0.12) !important; }
+.manifesto-pull { color: #1c1712 !important; }
+.manifesto-pull em { color: #8a6f2e !important; }
+.t-statement    { color: #1c1712 !important; }
+.hl             { color: #1c1712 !important; border-bottom-color: rgba(138,111,46,0.3) !important; }
+.hl-gold        { color: #8a6f2e !important; }
+/* 7P grid on manifesto */
+.seven-p        { background: rgba(138,111,46,0.12) !important; border-color: rgba(138,111,46,0.12) !important; }
+.seven-p__item  { background: #f4f0e8 !important; }
+.seven-p__item:hover { background: #ede8de !important; }
+.seven-p__num   { color: rgba(138,111,46,0.18) !important; }
+.seven-p__title { color: #1c1712 !important; }
+.seven-p__text  { color: #3a3028 !important; }
+
+/* ════════════════════════════════════════
+   VISION PAGE
+   ════════════════════════════════════════ */
+
+/* Video hero — stays dark (video) */
+/* Statement block */
+.vision-statement { background: #f4f0e8 !important; border-bottom-color: rgba(138,111,46,0.12) !important; }
+.vision-statement::before { color: rgba(138,111,46,0.05) !important; }
+.vision-statement__line { color: #f4f0e8 !important; }
+.vision-statement__line--gold { color: #c9a84c !important; }
+.vision-statement__rule { background: rgba(201,168,76,0.4) !important; }
+.vision-statement__context-text { color: #c9a84c !important; }
+
+/* Explanation */
+.vision-explanation { background: #f4f0e8 !important; border-bottom-color: rgba(138,111,46,0.12) !important; }
+.vision-explanation__heading { color: #1c1712 !important; }
+.vision-explanation__heading em { color: #8a6f2e !important; }
+.vision-para    { border-bottom-color: rgba(138,111,46,0.12) !important; }
+.vision-para:first-child { border-top-color: rgba(138,111,46,0.12) !important; }
+.vision-para__num { color: rgba(138,111,46,0.1) !important; }
+.vision-para:hover .vision-para__num { color: rgba(138,111,46,0.55) !important; }
+.vision-para__title { color: #8a6f2e !important; }
+.vision-para__key { color: #1c1712 !important; }
+.vision-para__key em { color: #8a6f2e !important; }
+.vision-para__body { color: #3a3028 !important; }
+
+/* Pull quote */
+.vision-pullquote { background: #ede8de !important; border-bottom-color: rgba(138,111,46,0.12) !important; }
+.vision-pullquote::before { background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(138,111,46,0.06) 0%, transparent 65%) !important; }
+.vision-pullquote__rule { background: linear-gradient(to bottom, transparent, rgba(138,111,46,0.28)) !important; }
+.vision-pullquote__rule--bottom { background: linear-gradient(to bottom, rgba(138,111,46,0.28), transparent) !important; }
+.vision-pullquote__quote { color: #1c1712 !important; }
+.vision-pullquote__quote em { color: #8a6f2e !important; }
+
+/* Pillars */
+.vision-pillars { background: #f4f0e8 !important; border-bottom-color: rgba(138,111,46,0.12) !important; }
+.vision-pillar  { border-bottom-color: rgba(138,111,46,0.12) !important; }
+.vision-pillar:first-child { border-top-color: rgba(138,111,46,0.12) !important; }
+.vision-pillar__num { color: rgba(138,111,46,0.1) !important; }
+.vision-pillar:hover .vision-pillar__num { color: rgba(138,111,46,0.55) !important; }
+.vision-pillar__title { color: #1c1712 !important; }
+.vision-pillar__text { color: #3a3028 !important; }
+.vision-pillar__text em { color: #3a3028 !important; font-style: normal; }
+
+/* Close / Karma section */
+.vision-close   { border-top-color: rgba(138,111,46,0.12) !important; }
+.vision-close__bg { background: radial-gradient(ellipse 50% 60% at 50% 50%, rgba(138,111,46,0.06) 0%, transparent 65%) !important; }
+
+/* ════════════════════════════════════════
+   CONTACT PAGE
+   ════════════════════════════════════════ */
+
+/* Video hero stays dark */
+/* Info panel */
+.contact-body   { background: #f4f0e8 !important; }
+.contact-info   { border-right-color: rgba(138,111,46,0.12) !important; }
+.contact-info__statement { color: #1c1712 !important; }
+.contact-info__statement .quiet { color: #3a3028 !important; }
+.contact-info__statement em { color: #8a6f2e !important; }
+.contact-detail__label  { color: #8a6f2e !important; opacity: 0.8 !important; }
+.contact-detail__value  { color: #1c1712 !important; }
+.contact-detail__value a { color: #1c1712 !important; }
+.contact-detail__value a:hover { color: #8a6f2e !important; }
+.contact-info__hours    { border-top-color: rgba(138,111,46,0.12) !important; }
+.contact-info__hours p  { color: #3a3028 !important; }
+
+/* Form */
+.contact-form__heading  { color: #1c1712 !important; }
+.contact-form__sub      { color: #3a3028 !important; }
+.form-label             { color: rgba(138,111,46,0.55) !important; }
+.form-input, .form-select, .form-textarea {
+  border-bottom-color: rgba(138,111,46,0.22) !important;
+  color: #1c1712 !important;
+  background: transparent !important;
+}
+.form-input::placeholder, .form-textarea::placeholder { color: rgba(28,23,18,0.25) !important; }
+.form-input:focus, .form-select:focus, .form-textarea:focus { border-bottom-color: #8a6f2e !important; }
+.form-select option     { background: #ede8de !important; color: #1c1712 !important; }
+.form-check input[type="checkbox"] { border-color: rgba(138,111,46,0.3) !important; }
+.form-check input[type="checkbox"]:checked { background: #8a6f2e !important; border-color: #8a6f2e !important; }
+.form-check input[type="checkbox"]:checked::after { border-color: #f4f0e8 !important; }
+.form-check label       { color: #3a3028 !important; }
+.form-submit            { border-top-color: rgba(138,111,46,0.12) !important; }
+.form-submit__note      { color: #3a3028 !important; }
+.form-success__icon     { border-color: #8a6f2e !important; }
+.form-success h3        { color: #1c1712 !important; }
+.form-success p         { color: #3a3028 !important; }
+
+  
+@media(max-width: 768px) {
+  .part-intro { padding: 60px 24px; }
+  .part-intro__title { font-size: clamp(1.8rem, 7vw, 3rem); }
+  .vision-statement__line { font-size: clamp(1.1rem, 3.5vw, 1.4rem); line-height: 2; }
+  .vision-statement__inner { padding: 60px 24px; }
+  .mission-section { padding: 0 24px 40px; }
+  .mission-item { padding: 40px 0; }
+  .mission-text { font-size: clamp(1.2rem, 4vw, 1.6rem); }
+  #karma-canvas { width: 100% !important; max-width: 300px !important; height: auto !important; aspect-ratio: 1 / 1 !important; }
+}
+
+
+@media(max-width: 768px) {
+  .nav { padding: 0 20px; }
+  .scroll-video-text { padding: 0 20px !important; }
+  .scroll-video-text .hero-line-1,
+  .scroll-video-text .hero-line-2 { font-size: clamp(3rem, 6vw, 5.5rem) !important; white-space: normal !important; }
+  .part-intro { padding: 48px 20px 24px !important; }
+  .part-intro__title { font-size: clamp(1.8rem, 7vw, 2.5rem) !important; }
+  .vision-statement__inner { padding: 48px 20px !important; }
+  .vision-statement__display { text-align: center !important; }
+  .vision-statement__line { display: block; font-size: clamp(1.05rem, 3.8vw, 1.3rem); line-height: 1.85; }
+  .vision-statement__line::after { content: ' '; }
+  .mission-section { padding: 0 20px 40px !important; overflow-x: hidden !important; }
+  /* Mobile: mission word as a centered title ABOVE each statement */
+  .mission-item {
+    position: relative !important;
+    padding: 40px 8px !important;
+    display: block !important;
+    text-align: center !important;
+    min-height: 0 !important;
+    border-bottom: 1px solid rgba(138,111,46,0.12) !important;
+  }
+  .mission-section .mission-item:last-of-type { border-bottom: none !important; }
+  .mission-ghost {
+    display: block !important;
+    position: static !important;
+    transform: none !important;
+    font-family: var(--font-display) !important;
+    font-weight: 400 !important;
+    font-size: clamp(1.75rem, 8vw, 2.4rem) !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1 !important;
+    color: rgba(138,111,46,0.32) !important;
+    -webkit-text-fill-color: rgba(138,111,46,0.32) !important;
+    white-space: normal !important;
+    margin: 0 0 18px 0 !important;
+    text-transform: none !important;
+    opacity: 1 !important;
+  }
+  .mission-text {
+    position: static !important;
+    text-align: center !important;
+    font-size: clamp(1.05rem, 4.2vw, 1.4rem) !important;
+  }
+  .mission-rule { display: none !important; }
+  .pillar__motif { display: none !important; }
+  .pillar-row    { grid-template-columns: 1fr !important; }
+  .pillar__body  { padding: 28px 0 !important; border-left: none !important; border-bottom: 1px solid rgba(138,111,46,0.08); }
+  #karma-canvas { width: 100% !important; max-width: 300px !important; height: auto !important; aspect-ratio: 1 / 1 !important; }
+  .footer { grid-template-columns: 1fr !important; gap: 32px !important; padding: 48px 20px 32px !important; }
+  .footer__bottom { flex-direction: column !important; gap: 10px !important; text-align: center !important; padding: 20px !important; }
+}
+
+</style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav__logo" href="../index.html"><span style="font-family:var(--font-brand);font-size: 1.8rem;font-weight:normal;letter-spacing:0.02em;text-transform:none">Bharni</span></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="manifesto_light.html">Manifesto</a></li>
+      <li><a href="values_light.html" class="active">Values</a></li>
+      <li><a href="collections_light.html">Jewellery</a></li>
+      <li><a href="contact_light.html">Connect</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- Video hero -->
+  <div class="scroll-video-wrap">
+    <div class="scroll-video-sticky">
+      <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="../assets/images/posters/flower_2-poster.jpg">
+        <source src="../assets/videos/flower_2.mp4" type="video/mp4">
+      </video>
+      <div class="scroll-video-overlay"></div>
+      <div class="scroll-video-text">
+        <span class="hero-line-1" id="heroLine1">When we serve.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PART 1: VISION
+  ══════════════════════════════════════ -->
+  <div id="vision" class="values-anchor">
+    <div class="part-intro reveal">
+      <div class="part-intro__text">
+<div class="part-intro__title">Vision</div>
+        <div class="part-intro__rule"></div>
+      </div>
+    </div>
+
+    <!-- Vision statement -->
+    <section class="vision-statement">
+      <div class="vision-statement__inner">
+        <div class="vision-statement__card">
+        <div class="vision-statement__display reveal reveal-delay-1">
+          <span class="vision-statement__line">Every look at</span>
+          <span class="vision-statement__line ml-start">every piece,</span>
+          <span class="vision-statement__line ml-start">every time,</span>
+          <span class="vision-statement__line ml-start dl-start">to everyone &mdash;</span>
+          <span class="vision-statement__line ml-start">should cherish &amp; assure</span>
+          <span class="vision-statement__line ml-start dl-start">the undisputed pleasure</span>
+          <span class="vision-statement__line ml-start">of life,</span>
+          <span class="vision-statement__line dl-start">&amp; justify the very</span>
+          <span class="vision-statement__line ml-start">reason of being</span>
+          <span class="vision-statement__line dl-start">adorned,</span>
+          <span class="vision-statement__line vision-statement__line--gold">when we serve.</span>
+        </div>
+        <div class="vision-statement__context reveal reveal-delay-2">
+          <div class="vision-statement__rule"></div>
+          <p class="vision-statement__context-text">Always.</p>
+          <div class="vision-statement__rule"></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 Pillars — hidden behind wax seal -->
+    <div class="pillars-section reveal">
+
+      <style>
+        .seal-wrap {
+          display: flex; flex-direction: column;
+          align-items: center; justify-content: center;
+          padding: 52px 0 40px; cursor: pointer;
+          border-bottom: 1px solid rgba(138,111,46,0.15);
+          user-select: none;
+        }
+        .seal-ring {
+          position: relative; width: 96px; height: 96px;
+        }
+        /* Outer decorative ring */
+        .seal-ring::before {
+          content: '';
+          position: absolute; inset: -8px;
+          border-radius: 50%;
+          border: 1px solid rgba(138,111,46,0.2);
+          transition: border-color 0.4s ease;
+        }
+        .seal-wrap:hover .seal-ring::before { border-color: rgba(138,111,46,0.45); }
+        .seal-disc {
+          width: 96px; height: 96px; border-radius: 50%;
+          background: radial-gradient(circle at 38% 35%, #d4a84c, #8a6f2e 60%, #6b5520);
+          display: flex; align-items: center; justify-content: center;
+          box-shadow: 0 4px 20px rgba(138,111,46,0.25), inset 0 1px 3px rgba(255,255,255,0.18), inset 0 -2px 4px rgba(0,0,0,0.15);
+          transition: transform 0.5s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.4s ease, opacity 0.5s ease;
+          position: relative; overflow: hidden;
+        }
+        /* Subtle radial texture lines on seal */
+        .seal-disc::before {
+          content: '';
+          position: absolute; inset: 0; border-radius: 50%;
+          background: repeating-conic-gradient(rgba(255,255,255,0.03) 0deg, transparent 2deg, transparent 18deg);
+        }
+        .seal-wrap:hover .seal-disc {
+          transform: scale(1.05);
+          box-shadow: 0 8px 32px rgba(138,111,46,0.35), inset 0 1px 3px rgba(255,255,255,0.2), inset 0 -2px 4px rgba(0,0,0,0.15);
+        }
+        .seal-disc.broken {
+          transform: rotate(18deg) scale(0.82) !important;
+          opacity: 0.35;
+          box-shadow: none !important;
+        }        .seal-numeral {
+          font-family: var(--font-display);
+          font-size: 2rem; font-weight: 400;
+          color: rgba(255,255,255,0.92);
+          font-style: normal;
+          text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+          position: relative; z-index: 1;
+          letter-spacing: 0.05em;
+        }
+        .seal-hint {
+          font-size: 1.38rem; letter-spacing: 0.3em; text-transform: uppercase;
+          color: rgba(138,111,46,0.45); margin-top: 16px;
+          transition: opacity 0.4s ease;
+        }
+        .seal-hint.hidden { opacity: 0; }
+      
+
+/* ── 7 P's (moved from Home) ─────────────────────────────── */
+@keyframes pChainSway { 0%,100%{ transform:rotate(-1.5deg); } 50%{ transform:rotate(1.5deg); } }
+@keyframes pGlint { 0%,55%,75%,100%{ opacity:0; } 65%{ opacity:1; } }
+@keyframes pGlowPulse { 0%,100%{ opacity:.2; } 50%{ opacity:.42; } }
+@keyframes pStandSway { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-1.5px); } }
+@keyframes pBondDraw { 0%,30%{ stroke-dashoffset:24; opacity:0; } 55%,85%{ stroke-dashoffset:0; opacity:.6; } 100%{ opacity:0; } }
+@keyframes pJboxOpen { 0%,15%,100%{ transform:rotate(0deg); } 45%,75%{ transform:rotate(-50deg); } }
+@keyframes pRibbonFlutter { 0%,100%{ transform:scaleY(1); } 50%{ transform:scaleY(1.04); } }
+@keyframes pTip { 0%,100%{ transform:rotate(0deg); } 25%{ transform:rotate(3deg); } 75%{ transform:rotate(-3deg); } }
+@keyframes pRipple { 0%{ opacity:0; transform:scale(0.6); } 25%{ opacity:.6; } 100%{ opacity:0; transform:scale(1.25); } }
+@keyframes pFlagWave { 0%,100%{ transform:rotate(0deg); } 50%{ transform:rotate(4deg); } }
+
+/* ── Values ──────────────────────────────────────────── */
+    /* ── 7 P's — scene layout ──────────────────────────────── */
+    .p-mul { display: inline-block; transform: translateY(0.16em); font-size: 1.08em; line-height: 0; }
+.p-scene {
+      min-height: 78vh;
+      display: grid;
+      grid-template-columns: 1.5fr 0.85fr;
+      align-items: center;
+      gap: 6vw;
+      border-top: 1px solid rgba(201,168,76,0.12);
+      padding: 70px 9vw;
+    }
+.p-scene .p-scene__content { order: 1; text-align: left; }
+.p-scene .p-scene__motif { order: 2; }
+.p-scene .p-scene__rule { margin-left: 0; margin-right: auto; }
+/* Explicit alternation — position-independent */
+    .p-scene--rev { grid-template-columns: 0.85fr 1.5fr; }
+.p-scene--rev .p-scene__motif { order: 1; }
+.p-scene--rev .p-scene__content { order: 2; text-align: right; }
+.p-scene--rev .p-scene__rule { margin-left: auto; margin-right: 0; }
+.p-scene__motif {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+.p-scene__motif svg {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      overflow: visible;
+    }
+.p-scene__content { max-width: 560px; }
+.p-scene__title {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(2.3rem, 4.025vw, 3.68rem);
+      color: #fff;
+      line-height: 1.02;
+    }
+.p-scene__rule {
+      width: 48px; height: 1px;
+      background: var(--gold);
+      margin: 26px 0;
+    }
+.p-scene__hook {
+      font-family: var(--font-display);
+      font-style: normal;
+      font-size: clamp(1.66rem, 2.59vw, 2.28rem);
+      color: var(--gold);
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+.p-scene__text {
+      font-size: 1.45rem;
+      line-height: 1.85;
+      color: rgba(244,241,234,0.75);
+    }
+.p-motif-stroke      { stroke: rgba(201,168,76,0.5); }
+.p-motif-stroke-soft { stroke: rgba(201,168,76,0.3); }
+.p-motif-fill-soft   { fill:   rgba(201,168,76,0.08); }
+/* motif animations */
+    .m-product .chain  { animation: pChainSway 5.5s ease-in-out infinite; transform-origin: 60px 28px; }
+.m-product .glint  { opacity:0; animation: pGlint 5.5s ease-in-out infinite; }
+.m-presentation .light { animation: pGlowPulse 4.5s ease-in-out infinite; }
+.m-people .figL, .m-people .figR { animation: pStandSway 6s ease-in-out infinite; }
+.m-people .figR { animation-delay: .4s; }
+.m-people .bond { stroke-dasharray:24; stroke-dashoffset:24; animation: pBondDraw 6s ease-in-out infinite; }
+.m-packaging .jlid   { animation: pJboxOpen 5.5s ease-in-out infinite; transform-origin: 30px 58px; }
+.m-packaging .ribbon { animation: pRibbonFlutter 5.5s ease-in-out infinite; transform-origin: 60px 58px; }
+.m-price .beam { animation: pTip 5s ease-in-out infinite; transform-origin: 60px 45px; }
+.m-promotion .ripple { animation: pRipple 3.6s ease-out infinite; transform-origin: 60px 70px; }
+.m-promotion .ripple:nth-child(2) { animation-delay: .7s; }
+.m-promotion .ripple:nth-child(3) { animation-delay: 1.4s; }
+.m-position .flag { animation: pFlagWave 4.5s ease-in-out infinite; transform-origin: 78px 35px; }
+.p-scene        { border-top-color: rgba(138,111,46,0.12) !important; }
+.p-scene__title { color: #1c1712 !important; }
+.p-scene__rule  { background: #8a6f2e !important; }
+.p-scene__hook  { color: #8a6f2e !important; }
+.p-scene__text  { color: rgba(28,23,18,0.72) !important; }
+.p-motif-stroke      { stroke: rgba(138,111,46,0.5) !important; }
+.p-motif-stroke-soft { stroke: rgba(138,111,46,0.28) !important; }
+.p-motif-fill-soft   { fill:   rgba(138,111,46,0.06) !important; }
+
+@media (max-width: 1024px) {
+.p-scene        { padding: 56px 5vw; gap: 4vw; }
+.p-scene__motif svg { max-width: 150px; }
+}
+
+@media (max-width: 768px) {
+/* VALUES / 7Ps — overridden by Option A below */
+      .p-scene, .p-scene--rev { grid-template-columns: 1fr !important; padding: 52px 7vw; }
+.p-scene__motif svg { max-width: 120px; }
+.p-scene { padding: 60px 20px !important; min-height: auto !important; }
+.p-scene__title { font-size: clamp(1.8rem, 7vw, 2.5rem) !important; }
+.p-scene__hook { font-size: 1.1rem !important; }
+.p-scene__text { font-size: 0.95rem !important; }
+/* 7 P's — Option A: SVG centred top, text below */
+  .p-scene,
+  .p-scene--rev {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 48px 24px !important;
+    min-height: auto !important;
+    gap: 0 !important;
+  }
+.p-scene .p-scene__motif,
+  .p-scene--rev .p-scene__motif {
+    order: -1 !important;
+    margin-bottom: 32px !important;
+    margin-right: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+.p-scene__motif svg { width: 110px !important; height: 110px !important; display: block !important; margin: 0 auto !important; }
+.p-scene .p-scene__content,
+  .p-scene--rev .p-scene__content { order: 1 !important; max-width: 100% !important; text-align: center !important; }
+.p-scene .p-scene__rule,
+  .p-scene--rev .p-scene__rule { margin: 14px auto !important; }
+.p-scene__title { font-size: clamp(1.8rem, 7vw, 2.5rem) !important; }
+.p-scene__hook { font-size: 1.1rem !important; }
+.p-scene__text { font-size: 0.95rem !important; }
+}
+
+/* ── Vision statement card (espresso on cream) ─────────────── */
+.vision-statement__card {
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+  margin: 0 auto;
+  background: #1c1712;
+  padding: 72px clamp(28px, 5vw, 68px);
+}
+.vision-statement__card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: clamp(28px, 5vw, 68px); right: clamp(28px, 5vw, 68px);
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(201,168,76,0.7) 50%, transparent);
+}
+.vision-statement__card .vision-statement__line { color: #f4f0e8 !important; }
+.vision-statement__card .vision-statement__line--gold { color: #c9a84c !important; }
+.vision-statement__card .vision-statement__rule { background: rgba(201,168,76,0.4) !important; }
+.vision-statement__card .vision-statement__context-text { color: #c9a84c !important; }
+@media (max-width: 768px) {
+  /* Vision card: open, breathable typography on mobile */
+  .vision-statement { padding: 24px 12px 40px !important; min-height: auto !important; }  /* tightened top gap to heading, dropped 80vh centering on mobile */
+  .vision-statement__card { padding: 52px 26px !important; }
+  .vision-statement__card::before { left: 26px; right: 26px; }
+  .vision-statement__card .vision-statement__inner { padding: 0 !important; }
+  .vision-statement__card .vision-statement__display { margin-bottom: 34px !important; }
+  .vision-statement__card .vision-statement__context { margin-top: 34px !important; }
+  .vision-statement__card .vision-statement__line {
+    display: inline !important;                            /* inline; line breaks come from .ml-start::before */
+    font-size: clamp(1.15rem, 4.6vw, 1.5rem) !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.03em !important;
+    word-spacing: 0.05em !important;
+    margin: 0 !important;
+  }
+  .vision-statement__card .vision-statement__line--gold { display: block !important; }
+  .vision-statement__card .vision-statement__line::after { content: none !important; }  /* remove the inline space hack */
+  .vision-statement__card .vision-statement__context-text {
+    font-size: clamp(1.18rem, 4.4vw, 1.5rem) !important;
+    letter-spacing: 0.04em !important;
+  }
+  .vision-statement__card .vision-statement__rule { max-width: 46px !important; }
+  /* Flower video: fill the frame (cover) so the bloom is large, not a tiny centered square */
+  .scroll-video-sticky { background: #0a0906; }
+  .scroll-video-sticky video { object-fit: cover !important; object-position: center 42% !important; }
+}
+</style>
+
+      <div class="seal-wrap" onclick="breakSeal()" id="sealWrap">
+        <div class="seal-ring">
+          <div class="seal-disc" id="sealDisc">
+            <span class="seal-numeral">VI</span>
+          </div>
+        </div>
+        <span class="seal-hint" id="sealHint">Break the seal</span>
+      </div>
+
+      <div class="pillars-wrap" id="pillarsWrap">
+
+        <div class="pillar-row">
+          <div class="pillar__motif">
+            <svg class="svg-eye" width="36" height="36" viewBox="0 0 22 22">
+              <g class="iris">
+                <ellipse cx="11" cy="11" rx="8" ry="5" fill="none" stroke="rgba(138,111,46,0.5)" stroke-width="0.8"/>
+                <circle cx="11" cy="11" r="3" fill="none" stroke="rgba(138,111,46,0.4)" stroke-width="0.7"/>
+              </g>
+              <circle class="glint" cx="13" cy="9.5" r="1" fill="rgba(138,111,46,0.7)"/>
+            </svg>
+          </div>
+          <div class="pillar__body">
+            <div class="pillar__title">Every Look. Every Piece. Every Time. Every One.</div>
+            <p class="pillar__text">Pick up any piece we serve. Any one. <span class="hl-gold">It should stop you.</span><br><br><span class="hl-gold">Not some of you. All of you.</span><br><span class="hl-gold">Not some of them. All of them.</span><br><span class="hl-gold">Not one time. Every time.</span><br><span class="hl-gold">Not one look. Every look.</span></p>
+          </div>
+        </div>
+
+        <div class="pillar-row">
+          <div class="pillar__motif">
+            <svg class="svg-heart" width="36" height="36" viewBox="0 0 22 22">
+              <path class="heart" d="M11,16 C11,16 4,11 4,7 C4,4.8 5.8,3 8,3 C9.3,3 10.4,3.7 11,4.7 C11.6,3.7 12.7,3 14,3 C16.2,3 18,4.8 18,7 C18,11 11,16 11,16 Z" fill="none" stroke="rgba(138,111,46,0.5)" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <div class="pillar__body">
+            <div class="pillar__title">Cherish</div>
+            <p class="pillar__text">A piece of jewellery should do one thing above everything else — <span class="hl-gold">make the person wearing it feel that life, right now, is worth celebrating.</span> That is what we mean by cherish. That is what we mean by assure.</p>
+          </div>
+        </div>
+
+        <div class="pillar-row">
+          <div class="pillar__motif">
+            <svg class="svg-crown" width="36" height="36" viewBox="0 0 22 22">
+              <g class="crown">
+                <path d="M3,16 L4,8 L8,12 L11,5 L14,12 L18,8 L19,16 Z" fill="none" stroke="rgba(138,111,46,0.5)" stroke-width="0.8" stroke-linejoin="round"/>
+                <line x1="3" y1="17" x2="19" y2="17" stroke="rgba(138,111,46,0.4)" stroke-width="0.7"/>
+              </g>
+            </svg>
+          </div>
+          <div class="pillar__body">
+            <div class="pillar__title">Undisputed</div>
+            <p class="pillar__text"><span class="hl-gold">A room full of different people. Different tastes. Different budgets. Different opinions.</span> <span class="hl">One piece. No debate. That is what we build for.</span></p>
+          </div>
+        </div>
+
+        <div class="pillar-row">
+          <div class="pillar__motif">
+            <svg class="svg-line" width="36" height="36" viewBox="0 0 22 22">
+              <line class="line" x1="3" y1="11" x2="19" y2="11" stroke="rgba(138,111,46,0.6)" stroke-width="1" stroke-linecap="round"/>
+              <circle cx="3" cy="11" r="1.5" fill="rgba(138,111,46,0.5)"/>
+            </svg>
+          </div>
+          <div class="pillar__body">
+            <div class="pillar__title">Justify</div>
+            <p class="pillar__text"><span class="hl-gold">The product does not lie. Shortcuts do.</span> <span class="hl">We let the product speak.</span></p>
+          </div>
+        </div>
+
+        <div class="pillar-row">
+          <div class="pillar__motif">
+            <svg class="svg-bangle" width="36" height="36" viewBox="0 0 22 22">
+              <path d="M5,14 Q5,8 11,8 Q17,8 17,14" fill="none" stroke="rgba(138,111,46,0.3)" stroke-width="0.8"/>
+              <ellipse class="bangle" cx="11" cy="13" rx="7" ry="3.5" fill="none" stroke="rgba(138,111,46,0.55)" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="pillar__body">
+            <div class="pillar__title">Adorned</div>
+            <p class="pillar__text"><span class="hl-gold">Jewellery should not wait for the occasion. It should create one.</span> <span class="hl">When you wear Bharni, the occasion has already begun.</span></p>
+          </div>
+        </div>
+
+        <div class="pillar-row">
+          <div class="pillar__motif">
+            <svg class="svg-clasp" width="36" height="36" viewBox="0 0 22 22">
+              <g class="h1">
+                <path d="M3,11 Q4,8 7,8 L11,11" fill="none" stroke="rgba(138,111,46,0.5)" stroke-width="0.9" stroke-linecap="round"/>
+                <path d="M3,11 Q3,14 6,14 L11,11" fill="none" stroke="rgba(138,111,46,0.4)" stroke-width="0.7" stroke-linecap="round"/>
+              </g>
+              <g class="h2">
+                <path d="M19,11 Q18,8 15,8 L11,11" fill="none" stroke="rgba(138,111,46,0.5)" stroke-width="0.9" stroke-linecap="round"/>
+                <path d="M19,11 Q19,14 16,14 L11,11" fill="none" stroke="rgba(138,111,46,0.4)" stroke-width="0.7" stroke-linecap="round"/>
+              </g>
+              <circle cx="11" cy="11" r="1.5" fill="rgba(138,111,46,0.5)"/>
+            </svg>
+          </div>
+          <div class="pillar__body">
+            <div class="pillar__title">When We Serve</div>
+            <p class="pillar__text">When we serve, the piece is only part of what we deliver. <span class="hl-gold">The certainty that what we said we would do, we did. Completely. Without being asked twice.</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PART 2: MISSION
+  ══════════════════════════════════════ -->
+  <div id="mission" class="values-anchor">
+    <div class="part-intro reveal">
+      <div class="part-intro__text">
+<div class="part-intro__title">Mission</div>
+        <div class="part-intro__rule"></div>
+      </div>
+    </div>
+
+    <div class="mission-section">
+
+        <div class="mission-item">
+          <div class="mission-ghost">Justice</div>
+          <div class="mission-rule"></div>
+          <p class="mission-text">Do justice to all involved — <em>and all will do in return, every time.</em></p>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-ghost">Legacy</div>
+          <div class="mission-rule"></div>
+          <p class="mission-text">Deliver the best product on earth &amp; <em>leave the world better than we found it.</em></p>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-ghost">Honest</div>
+          <div class="mission-rule"></div>
+          <p class="mission-text">Be transparent on how you will serve — <em>all, in writing.</em></p>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-ghost">Pursuit</div>
+          <div class="mission-rule"></div>
+          <p class="mission-text">Be better every day — <em>for Supplier, Team &amp; Customer.</em></p>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-ghost">Art</div>
+          <div class="mission-rule"></div>
+          <p class="mission-text">Every piece should be an Art to be Cherished &amp; Affordable — <em>not at the cost of beauty.</em></p>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PART 3: CORE VALUES
+  ══════════════════════════════════════ -->
+  <div id="sevenps" class="values-anchor">
+    <div class="part-intro reveal">
+      <div class="part-intro__text">
+<div class="part-intro__title">The <span class="bodoni-num">7</span> P's</div>
+        <div class="part-intro__rule"></div>
+      </div>
+    </div>
+
+    <div class="sevenps-section">
+
+  <!-- PRODUCT -->
+  <div class="p-scene reveal">
+    <div class="p-scene__motif m-product">
+      <svg viewBox="0 0 120 140"><g transform="translate(-36.00,-8.40) scale(1.6000)">
+        <g class="chain">
+          <path class="p-motif-stroke" d="M30,26 Q60,72 90,26" fill="none" stroke-width="1"/>
+          <circle class="p-motif-stroke" cx="60" cy="66" r="6" fill="none" stroke-width="1"/>
+        </g>
+        <circle class="glint" cx="58" cy="63" r="1.5" fill="#fff"/>
+      </g></svg>
+    </div>
+    <div class="p-scene__content">
+      <h3 class="p-scene__title">Product</h3>
+      <div class="p-scene__rule"></div>
+      <div class="p-scene__hook">The Industry's Finest.</div>
+      <p class="p-scene__text">Core Purpose of our Existence. Deliver what the Customer cares about most.</p>
+    </div>
+  </div>
+
+  <!-- PRESENTATION -->
+  <div class="p-scene p-scene--rev reveal">
+    <div class="p-scene__motif m-presentation">
+      <svg viewBox="0 0 120 140"><g transform="translate(-15.79,-7.05) scale(1.2632)">
+        <rect class="p-motif-stroke" x="22" y="22" width="76" height="78" fill="none" stroke-width="1"/>
+        <rect class="light p-motif-fill-soft" x="22" y="22" width="76" height="78" stroke="none"/>
+        <path class="p-motif-stroke" d="M60,52 q-9,0 -9,11 l0,16 l18,0 l0,-16 q0,-11 -9,-11" fill="none" stroke-width="1"/>
+        <path class="p-motif-stroke-soft" d="M50,58 q10,-5 20,0" fill="none" stroke-width=".8"/>
+        <line class="p-motif-stroke-soft" x1="22" y1="100" x2="98" y2="100" stroke-width="1"/>
+      </g></svg>
+    </div>
+    <div class="p-scene__content">
+      <h3 class="p-scene__title">Presentation</h3>
+      <div class="p-scene__rule"></div>
+      <div class="p-scene__hook">The Invitation Before the Conversation.</div>
+      <p class="p-scene__text">Invites the Customer. Every Time.</p>
+    </div>
+  </div>
+
+  <!-- PEOPLE -->
+  <div class="p-scene reveal">
+    <div class="p-scene__motif m-people">
+      <svg viewBox="0 0 120 140"><g transform="translate(8.57,37.43) scale(0.8571)">
+        <g class="p-motif-stroke" fill="none" stroke-width="0.9" opacity="0.85">
+          <circle cx="12" cy="32" r="5"/>
+          <line x1="12" y1="37" x2="12" y2="54"/>
+          <line x1="12" y1="54" x2="6"  y2="64"/>
+          <line x1="12" y1="54" x2="18" y2="64"/>
+          <line x1="12" y1="44" x2="6"  y2="51"/>
+          <line x1="12" y1="44" x2="18" y2="51"/>
+          <circle cx="33" cy="26" r="6"/>
+          <line x1="33" y1="32" x2="33" y2="51"/>
+          <line x1="33" y1="51" x2="26" y2="63"/>
+          <line x1="33" y1="51" x2="40" y2="63"/>
+          <line x1="33" y1="40" x2="26" y2="48"/>
+          <line x1="33" y1="40" x2="40" y2="48"/>
+          <circle cx="55" cy="18" r="7" stroke-width="1.1"/>
+          <line x1="55" y1="25" x2="55" y2="47" stroke-width="1.1"/>
+          <line x1="55" y1="47" x2="47" y2="62" stroke-width="1.1"/>
+          <line x1="55" y1="47" x2="63" y2="62" stroke-width="1.1"/>
+          <line x1="55" y1="34" x2="47" y2="43" stroke-width="1.1"/>
+          <line x1="55" y1="34" x2="63" y2="43" stroke-width="1.1"/>
+          <circle cx="77" cy="26" r="6"/>
+          <line x1="77" y1="32" x2="77" y2="51"/>
+          <line x1="77" y1="51" x2="70" y2="63"/>
+          <line x1="77" y1="51" x2="84" y2="63"/>
+          <line x1="77" y1="40" x2="70" y2="48"/>
+          <line x1="77" y1="40" x2="84" y2="48"/>
+          <circle cx="98" cy="32" r="5"/>
+          <line x1="98" y1="37" x2="98" y2="54"/>
+          <line x1="98" y1="54" x2="92" y2="64"/>
+          <line x1="98" y1="54" x2="104" y2="64"/>
+          <line x1="98" y1="44" x2="92" y2="51"/>
+          <line x1="98" y1="44" x2="104" y2="51"/>
+          <line x1="4" y1="65" x2="116" y2="65" stroke-width="0.4" opacity="0.3"/>
+        </g>
+      </g></svg>
+    </div>
+    <div class="p-scene__content">
+      <h3 class="p-scene__title">People</h3>
+      <div class="p-scene__rule"></div>
+      <div class="p-scene__hook">Justice. To All!</div>
+      <p class="p-scene__text">The Vendor. The Team. The Retailer. The End User. The Authorities.</p>
+    </div>
+  </div>
+
+  <!-- PACKAGING -->
+  <div class="p-scene p-scene--rev reveal">
+    <div class="p-scene__motif m-packaging">
+      <svg viewBox="0 0 120 140"><g transform="translate(-30.00,-35.00) scale(1.5000)">
+        <rect class="p-motif-stroke" x="28" y="58" width="64" height="44" fill="none" stroke-width="1"/>
+        <g class="jlid">
+          <polygon class="p-motif-stroke" points="28,58 92,58 92,38 28,38" fill="none" stroke-width="1"/>
+          <line class="p-motif-stroke-soft" x1="55" y1="38" x2="55" y2="58" stroke-width=".6"/>
+          <line class="p-motif-stroke-soft" x1="65" y1="38" x2="65" y2="58" stroke-width=".6"/>
+        </g>
+        <g class="ribbon">
+          <line class="p-motif-stroke" x1="60" y1="58" x2="60" y2="102" stroke-width="1"/>
+          <path class="p-motif-stroke-soft" d="M52,86 q8,-8 16,0 q-8,8 -16,0" fill="none" stroke-width=".7"/>
+        </g>
+      </g></svg>
+    </div>
+    <div class="p-scene__content">
+      <h3 class="p-scene__title">Packaging</h3>
+      <div class="p-scene__rule"></div>
+      <div class="p-scene__hook">Proof of the moment.</div>
+      <p class="p-scene__text">It certifies for those who could not experience it.</p>
+    </div>
+  </div>
+
+  <!-- PRICE -->
+  <div class="p-scene reveal">
+    <div class="p-scene__motif m-price">
+      <svg viewBox="0 0 120 140"><g transform="translate(-8.57,-11.14) scale(1.1429)">
+        <line class="p-motif-stroke" x1="60" y1="30" x2="60" y2="100" stroke-width="1"/>
+        <g class="beam">
+          <line class="p-motif-stroke" x1="25" y1="45" x2="95" y2="45" stroke-width="1"/>
+          <line class="p-motif-stroke-soft" x1="25" y1="45" x2="20" y2="62" stroke-width=".7"/>
+          <line class="p-motif-stroke-soft" x1="25" y1="45" x2="30" y2="62" stroke-width=".7"/>
+          <path class="p-motif-stroke-soft" d="M18,62 a7,5 0 0 0 14,0" fill="none" stroke-width=".7"/>
+          <line class="p-motif-stroke-soft" x1="95" y1="45" x2="90" y2="62" stroke-width=".7"/>
+          <line class="p-motif-stroke-soft" x1="95" y1="45" x2="100" y2="62" stroke-width=".7"/>
+          <path class="p-motif-stroke-soft" d="M88,62 a7,5 0 0 0 14,0" fill="none" stroke-width=".7"/>
+        </g>
+        <polygon points="50,100 70,100 60,112" fill="rgba(201,168,76,0.45)"/>
+      </g></svg>
+    </div>
+    <div class="p-scene__content">
+      <h3 class="p-scene__title">Price</h3>
+      <div class="p-scene__rule"></div>
+      <div class="p-scene__hook">Not competing. Leading.</div>
+      <p class="p-scene__text">Progressive. Towards the Best.</p>
+    </div>
+  </div>
+
+  <!-- PROMOTION -->
+  <div class="p-scene p-scene--rev reveal">
+    <div class="p-scene__motif m-promotion">
+      <svg viewBox="0 0 120 140"><g transform="translate(4.62,16.46) scale(0.9231)">
+        <!-- outer rays -->
+        <line class="p-motif-stroke" x1="60" y1="18" x2="60" y2="8"  stroke-width="0.8" opacity="0.5"/>
+        <line class="p-motif-stroke" x1="88" y1="27" x2="95" y2="20" stroke-width="0.8" opacity="0.5"/>
+        <line class="p-motif-stroke" x1="102" y1="55" x2="112" y2="52" stroke-width="0.8" opacity="0.5"/>
+        <line class="p-motif-stroke" x1="92" y1="83" x2="100" y2="90" stroke-width="0.8" opacity="0.5"/>
+        <line class="p-motif-stroke" x1="60" y1="98" x2="60" y2="108" stroke-width="0.8" opacity="0.5"/>
+        <line class="p-motif-stroke" x1="28" y1="83" x2="20" y2="90" stroke-width="0.8" opacity="0.5"/>
+        <line class="p-motif-stroke" x1="18" y1="55" x2="8"  y2="52" stroke-width="0.8" opacity="0.5"/>
+        <line class="p-motif-stroke" x1="32" y1="27" x2="25" y2="20" stroke-width="0.8" opacity="0.5"/>
+        <!-- star -->
+        <polygon class="p-motif-stroke" points="60,22 65,42 86,42 69,55 76,76 60,63 44,76 51,55 34,42 55,42" fill="rgba(201,168,76,0.08)" stroke-width="1.1"/>
+      </g></svg>
+    </div>
+    <div class="p-scene__content">
+      <h3 class="p-scene__title">Promotion</h3>
+      <div class="p-scene__rule"></div>
+      <div class="p-scene__hook">Communicate. Reward.</div>
+      <p class="p-scene__text">Real value. No surprises.</p>
+    </div>
+  </div>
+
+  <!-- POSITION -->
+  <div class="p-scene reveal">
+    <div class="p-scene__motif m-position">
+      <svg viewBox="0 0 120 140"><g transform="translate(-28.33,-31.86) scale(1.4247)">
+        <rect class="p-motif-stroke" x="42" y="80" width="36" height="28" fill="none" stroke-width="1"/>
+        <line class="p-motif-stroke" x1="60" y1="80" x2="60" y2="35" stroke-width="1"/>
+        <path class="flag p-motif-stroke" d="M60,35 L60,52 L82,43 Z" fill="rgba(201,168,76,0.12)" stroke-width="1"/>
+        <text x="60" y="98" text-anchor="middle" font-family="Cormorant Garamond" font-size="16" fill="rgba(201,168,76,0.6)">1</text>
+      </g></svg>
+    </div>
+    <div class="p-scene__content">
+      <h3 class="p-scene__title">Position</h3>
+      <div class="p-scene__rule"></div>
+      <div class="p-scene__hook">The First Choice.</div>
+      <p class="p-scene__text">Product <span class="p-mul">*</span> Presentation <span class="p-mul">*</span> People <span class="p-mul">*</span> Packaging <span class="p-mul">*</span> Price <span class="p-mul">*</span> Promotion = Position</p>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- Karma animation -->
+  <div class="vision-pullquote">
+    <div class="vision-pullquote__inner reveal" style="display:flex;flex-direction:column;align-items:center;padding:80px 24px;">
+      <canvas id="karma-canvas" style="display:block;width:100%;max-width:660px;height:auto;aspect-ratio:690/800;margin:0 auto;"></canvas>
+    </div>
+  </div>
+
+  <div class="vision-close">
+    <div class="vision-close__bg"></div>
+    <div class="vision-close__content">
+      <a href="collections_light.html" class="btn reveal">
+        <span>Our Jewellery</span>
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14M10 1l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <div class="footer__brand" style="font-family:var(--font-brand);font-size:1.6rem;font-weight:normal;letter-spacing:0.03em;text-transform:none">Bharni Gems</div>
+        <div class="footer__tagline">You never know us. You always wear us.</div>
+        <br>
+        <p class="footer__brand-extra" style="font-size:1rem;color:#ffffff;line-height:1.8">B2B Diamond Jewellery<br>Hyderabad</p>
+      </div>
+      <div>
+        <p style="font-size: 0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Navigation</p>
+        <ul class="footer__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="manifesto_light.html">Manifesto</a></li>
+          <li><a href="values_light.html">Values</a></li>
+          <li><a href="collections_light.html">Jewellery</a></li>
+          <li><a href="contact_light.html">Connect</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__contact-label" style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Contact</p>
+        <p><a href="tel:+918977133111">+91 89771 33111</a><br><a href="mailto:accounts@bharnigems.com" style="text-transform:lowercase">accounts@bharnigems.com</a><br><a href="mailto:orders@bharnigems.com" style="text-transform:lowercase">orders@bharnigems.com</a>        <div class="footer__contact-social">
+          <a href="https://www.instagram.com/bharni.gems?igsh=OGlmN3N3a3o3ZjUx" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/918977133111" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer__social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span class="bodoni-num">2025</span> Bharni Gems. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/bharni.gems?igsh=OGlmN3N3a3o3ZjUx" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://wa.me/918977133111" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer__social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+      <p>Diamond Jewellery · B2B Trade</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Hero text
+    window.addEventListener('load', () => {
+      setTimeout(() => document.getElementById('heroLine1').classList.add('visible'), 300);
+    });
+
+    // Pillar toggle
+    function breakSeal() {
+      const seal = document.getElementById('sealDisc');
+      const hint = document.getElementById('sealHint');
+      const pillars = document.getElementById('pillarsWrap');
+      
+      if(seal.classList.contains('broken')) {
+        // Close — restore seal
+        seal.classList.remove('broken');
+        hint.textContent = 'Break the seal';
+        hint.classList.remove('hidden');
+        pillars.classList.remove('open');
+      } else {
+        // Open — break seal
+        seal.classList.add('broken');
+        hint.textContent = 'Restore the seal';
+        hint.classList.remove('hidden');
+        setTimeout(() => { pillars.classList.add('open'); }, 300);
+      }
+    }
+
+    // Scroll reveal for mission items and CV cards
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.mission-item, .p-scene').forEach(el => revealObs.observe(el));
+
+    // Karma canvas
+    (function(){
+      const cv = document.getElementById('karma-canvas');
+      const ctx = cv.getContext('2d');
+      function resize(){
+        const rect = cv.getBoundingClientRect();
+        const dpr = window.devicePixelRatio || 1;
+        cv.width = Math.max(1, Math.round(rect.width * dpr));
+        cv.height = Math.max(1, Math.round(rect.height * dpr));
+      }
+      resize(); window.addEventListener('resize', resize);
+      const eo = t => 1 - Math.pow(1-t, 3);
+      const eio = t => t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2;
+      const cl = (v,a,b) => Math.max(a, Math.min(b,v));
+      const ph = (s,e) => cl((elapsed-s)/(e-s), 0, 1);
+      const CYCLE = 14.0;
+      const trail = [];
+      let elapsed = 0, last = null;
+      function R(){ return cv.width * 0.36; }
+      function threadPt(f){ const r = (1-f)*R() + f*2; const a = f*Math.PI*2*3.8 - Math.PI/2; return [cv.width/2 + Math.cos(a)*r, cv.height/2 + Math.sin(a)*r]; }
+      function draw(ts){
+        if(!last) last = ts;
+        const dt = Math.min((ts-last)/1000, 0.05); last = ts; elapsed += dt;
+        if(elapsed > CYCLE){ elapsed -= CYCLE; trail.length = 0; }
+        const cx = cv.width/2, cy = cv.height/2, r = R();
+        ctx.clearRect(0,0,cv.width,cv.height);
+        ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2);
+        ctx.strokeStyle = 'rgba(138,111,46,0.12)'; ctx.lineWidth = 0.7; ctx.stroke();
+        const cometProgress = ph(0,3), cometFade = eo(ph(2.4,3.1));
+        if(cometProgress > 0 && elapsed < 3.5){
+          const angle = -Math.PI/2 + cometProgress*Math.PI*2*1.8;
+          const ox = cx+Math.cos(angle)*r, oy = cy+Math.sin(angle)*r;
+          trail.push({x:ox,y:oy,born:elapsed});
+          while(trail.length && elapsed-trail[0].born > 1.6) trail.shift();
+          const fa = 1-cometFade;
+          trail.forEach(p => { const age=(elapsed-p.born)/1.6, a=(1-age)*0.42*fa, s=0.4+(1-age)*2.2; ctx.beginPath(); ctx.arc(p.x,p.y,s,0,Math.PI*2); ctx.fillStyle=`rgba(201,168,76,${a})`; ctx.fill(); });
+          if(cometFade < 0.6){ const ga=(1-cometFade)*0.18; const grad=ctx.createRadialGradient(ox,oy,0,ox,oy,12); grad.addColorStop(0,`rgba(201,168,76,${ga*2})`); grad.addColorStop(1,'rgba(201,168,76,0)'); ctx.beginPath(); ctx.arc(ox,oy,12,0,Math.PI*2); ctx.fillStyle=grad; ctx.fill(); }
+        }
+        const threadProgress = eio(ph(2.5,6.5)), threadAlpha = eo(ph(2.5,4.2))*(1-eo(ph(5.8,6.5)))*0.72;
+        if(threadProgress > 0){ ctx.save(); ctx.globalAlpha=threadAlpha; ctx.strokeStyle='#c9a84c'; ctx.lineWidth=cv.width*0.0028; ctx.lineCap='round'; ctx.lineJoin='round'; ctx.beginPath(); for(let i=0;i<=300*threadProgress;i++){ const [px,py]=threadPt(i/300); i===0?ctx.moveTo(px,py):ctx.lineTo(px,py); } ctx.stroke(); ctx.restore(); }
+        const wordAlpha = eo(ph(6.0,8.2))*(1-eo(ph(12.0,13.5)));
+        if(wordAlpha > 0){ ctx.save(); ctx.globalAlpha=wordAlpha*0.92; ctx.font=`${cv.width*0.26}px serif`; ctx.fillStyle='#c9a84c'; ctx.textBaseline='middle';
+          /* Center by the glyph's actual ink box, not advance width — Devanagari कर्म has
+             asymmetric side-bearings and the substituted font differs iOS vs desktop, so
+             textAlign:'center' drifts on device. Measure and place the anchor manually. */
+          ctx.textAlign='left';
+          var km = ctx.measureText('कर्म');
+          var kbl = (typeof km.actualBoundingBoxLeft === 'number') ? km.actualBoundingBoxLeft : (km.width/2);
+          var kbr = (typeof km.actualBoundingBoxRight === 'number') ? km.actualBoundingBoxRight : (km.width/2);
+          ctx.fillText('कर्म', cx - (kbr - kbl)/2, cy);
+          ctx.restore(); }
+
+        // Tagline — fades in after कर्म, sits below the circle
+        const tagAlpha = eo(ph(7.5,9.5))*(1-eo(ph(12.5,13.8)));
+        if(tagAlpha > 0){
+          ctx.save();
+          ctx.globalAlpha = tagAlpha * 0.75;
+          ctx.font = `${cv.width*0.038}px 'Cormorant Garamond', Georgia, serif`;
+          ctx.fillStyle = '#8a6f2e';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'top';
+          ctx.fillText('Every smile we create is credited. Somewhere. Always.', cx, cy + r + cv.width*0.06);
+          ctx.restore();
+        }
+        if (running) requestAnimationFrame(draw);
+      }
+
+      /* Only animate while the canvas is on screen and the tab is visible */
+      var running = false;
+      function start(){ if (running || document.hidden) return; running = true; last = null; requestAnimationFrame(draw); }
+      function stop(){ running = false; }
+      var onScreen = false;
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ onScreen = e.isIntersecting; onScreen ? start() : stop(); });
+      }, { threshold: 0 }).observe(cv);
+      document.addEventListener('visibilitychange', function(){
+        document.hidden ? stop() : (onScreen && start());
+      });
+    })();
+  </script>
+
+  <script>
+  (function(){
+    var nav = document.querySelector('.nav');
+    if (!nav) return;
+    nav.setAttribute('data-bg', 'dark');
+    var navH = nav.offsetHeight;
+    var navH = nav.offsetHeight || 60;
+
+    // Elements whose background is DARK (nav should be white over them)
+    var darkSel = '.scroll-video-wrap, .vision-statement__card';
+    // Everything else on this page is light (cream) -> nav dark text.
+
+    function updateNav() {
+      // sample point just below the nav, horizontally centered
+      var x = window.innerWidth / 2;
+      var y = navH + 4;
+      var els = document.elementsFromPoint(x, y);
+      var onDark = els.some(function(el){ return el.closest && el.closest(darkSel); });
+      var onFooter = els.some(function(el){ return el.closest && el.closest('footer'); });
+      nav.setAttribute('data-bg', onFooter ? 'brown' : (onDark ? 'dark' : 'light'));
+    }
+
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+    window.addEventListener('resize', function(){ navH = nav.offsetHeight || 60; updateNav(); });
+  })();
+  </script>
+  <script>
+  (function(){
+    /* Hamburger */
+    var h = document.getElementById('navHamburger');
+    var nl = document.getElementById('navLinks');
+    var nav = document.querySelector('.nav');
+    if (h && nl) {
+      h.addEventListener('click', function(){
+        var open = nl.classList.toggle('open');
+        h.classList.toggle('open', open);
+        if (nav) nav.classList.toggle('menu-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      });
+      nl.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          h.classList.remove('open');
+          nl.classList.remove('open');
+          if (nav) nav.classList.remove('menu-open');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+    /* Hide nav on scroll down, show on scroll up — mobile only */
+    if (window.innerWidth <= 768 && nav) {
+      var lastY = 0;
+      window.addEventListener('scroll', function(){
+        var y = window.scrollY || 0;
+        if (y > lastY && y > 80) nav.classList.add('nav-hidden');
+        else nav.classList.remove('nav-hidden');
+        lastY = y;
+      }, { passive: true });
+    }
+  })();
+  </script>
+
+  <script>
+  /* Adaptive video quality — mobile ALWAYS lite; desktop by connection */
+  (function(){
+    function isSlow(){
+      var c = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      if (c && c.effectiveType && /(^|-)2g|3g/.test(c.effectiveType)) return true;
+      if (c && c.saveData) return true;
+      return false;
+    }
+    var useLite = window.innerWidth <= 768 || isSlow();
+    document.querySelectorAll('video source[data-src]').forEach(function(s){
+      var src = s.getAttribute('data-src');
+      if (useLite) src = src.replace(/\.mp4$/, '_lite.mp4');
+      s.setAttribute('src', src);
+      var v = s.closest('video');
+      if (v) {
+        // Safari: muted MUST be set as a property for programmatic autoplay
+        v.muted = true;
+        v.setAttribute('muted', '');
+        v.playsInline = true;
+        v.load();
+        var tryPlay = function(){ var p = v.play(); if (p && p.catch) p.catch(function(){}); };
+        if (v.autoplay) {
+          tryPlay();
+          // Safari often needs the retry after metadata/data is ready
+          v.addEventListener('loadeddata', tryPlay, { once: true });
+          v.addEventListener('canplay', tryPlay, { once: true });
+        }
+      }
+    });
+  })();
+  </script>
+<script>console.log("%cBHARNI VALUES BUILD 2026-07-28-A — vision desktop = Image2 6 lines (hard-wired, auto-fit box) / mobile 9 lines / gap 40px","color:#8a6f2e;font-weight:bold")</script>
+</body>
+</html>
